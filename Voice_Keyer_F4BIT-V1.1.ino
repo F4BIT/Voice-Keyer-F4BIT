@@ -1,4 +1,4 @@
-// Arduino Nano Voice Keye V1.1
+// Arduino Nano Voice Keyer V1.1
 // LCD 16x2 + DFPlayer Mini
 // Stéphane F4BIT/N4BIT
 // stephane@mangeolle.fr
@@ -41,9 +41,7 @@ char message6[16] = "Message 6";
 
 int menu = 1;
 
-
 void setup() {
-
 
   mySoftwareSerial.begin(9600);
   Serial.begin(9600);
@@ -207,7 +205,6 @@ void action1() {
   lcd.setCursor(0, 1);
   lcd.print(message1);
   myDFPlayer.play(1);
-
 }
 void action2() {
   Serial.println(message2);
