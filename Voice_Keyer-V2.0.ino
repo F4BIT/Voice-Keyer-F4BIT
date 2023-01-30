@@ -93,35 +93,35 @@ void loop() {
     }
   }
   if (!digitalRead(selectButton1)) {
-		menu=1;
+	menu=1;
     	PTTon();
-		executeAction();
-		delay(500);
-		}
+	executeAction();
+	delay(500);
+	}
     while (!digitalRead(selectButton1));
   
   if (!digitalRead(selectButton2)) {
-		menu=2;
+	menu=2;
     	PTTon();
-		executeAction();
-		delay(500);
-		}
+	executeAction();
+	delay(500);
+	}
     while (!digitalRead(selectButton2));
 	
   if (!digitalRead(selectButton3)) {
-		menu=3;
+	menu=3;
     	PTTon();
-		executeAction();
-		delay(500);
-		}
+	executeAction();
+	delay(500);
+	}
     while (!digitalRead(selectButton3));
 	
 	if (!digitalRead(selectButton4)) {
-		menu=4;
+	menu=4;
     	PTTon();
-		executeAction();
-		delay(500);
-		}
+	executeAction();
+	delay(500);
+	}
     while (!digitalRead(selectButton4));
 	
   if (!digitalRead(pinbusy)) {
@@ -170,7 +170,6 @@ void action4() {
   Serial.println(message4);
   myDFPlayer.play(4);
 }
-
 void stopAction() {
   myDFPlayer.stop();
   PTToff();
